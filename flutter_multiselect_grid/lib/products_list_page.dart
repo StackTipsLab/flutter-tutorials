@@ -19,7 +19,6 @@ class ProductsListPageState extends State<ProductsListPage> {
   List<MultiSelectItem<Product>> listItems = <MultiSelectItem<Product>>[];
   final ProductRepository productRepository = ProductRepository();
   late Future<List<Product>> _products;
-
   get selectedCount => listItems.where((c) => c.selected == true).length;
 
   @override
